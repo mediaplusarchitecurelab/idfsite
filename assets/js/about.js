@@ -17,8 +17,8 @@ var aboutstr =
 
         '<h2 class="dt-section-title text-uppercase sr-animated">'+mapsite.about.intro.titlestr+'</h2>'+
 
-        '<div class="col-md-10 col-md-offset-1">'+
-          '<div class="dt-section-description sr-animated">';
+        '<div class="col-md-10 col-md-offset-3">'+
+          '<div class="dt-section-description sr-animated text-left">';
 
   for(let i=0;i<mapsite.about.intro.contentstr.length;i+=1){
      
