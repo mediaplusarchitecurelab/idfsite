@@ -18,12 +18,22 @@ var footerstr =
               '</div>'+
               //<!-- /.dt-company-logo -->
 
-              '<div class="dt-about-us-content">'+
-                mapsite.footer.contentstr+
+              '<div class="dt-about-us-content">';
+
+for(let i=0;i<mapsite.footer.contentstr.length;i+=1){
+     
+     
+    let val = mapsite.footer.contentstr[i];
+    //console.log(val);
+    footerstr+='</br>'+val;
+    
+  }   
+  
+footerstr+=
               '</div>'+
               //<!-- /.dt-about-us-content -->
             '</div>'+
-            //<!-- /.dt-entry-featured -->
+            //<!-- /.dt-widget-container -->
             '<div class="clearfix"></div>'+
 
           '</section>'+
