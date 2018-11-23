@@ -125,6 +125,14 @@ $.ajax(
               content.push(val);
             }
         }
+        let footercontent =[];
+        for(let i = 0;i<urlmap.feed.entry.length;i+=1){
+            let val = urlmap.feed.entry[i].gsx$底欄位關於內文.$t;
+            if (val===""){break;}
+            else{
+              footercontent.push(val);
+            }
+        }
 
         if (ty==='EN'){
           
@@ -141,7 +149,8 @@ $.ajax(
                               "addrass": urlmap.feed.entry[0].gsx$地址.$t,
                               "tel": urlmap.feed.entry[0].gsx$電話.$t,
                               "logoline": urlmap.feed.entry[0].gsx$圖示橫.$t,
-                              "logostright": urlmap.feed.entry[0].gsx$圖示直.$t
+                              "logostright": urlmap.feed.entry[0].gsx$圖示直.$t,
+                              "contentstr":footercontent
                           };
         }else{
           mapsitetw.about={  "intro": 
@@ -156,7 +165,8 @@ $.ajax(
                               "addrass": urlmap.feed.entry[0].gsx$地址.$t,
                               "tel": urlmap.feed.entry[0].gsx$電話.$t,
                               "logoline": urlmap.feed.entry[0].gsx$圖示橫.$t,
-                              "logostright": urlmap.feed.entry[0].gsx$圖示直.$t
+                              "logostright": urlmap.feed.entry[0].gsx$圖示直.$t,
+                              "contentstr":footercontent
                           };
         }
   }                     

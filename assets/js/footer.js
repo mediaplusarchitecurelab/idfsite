@@ -19,7 +19,7 @@ var footerstr =
               //<!-- /.dt-company-logo -->
 
               '<div class="dt-about-us-content">'+
-                mapsite.about.intro.contentstr+
+                mapsite.footer.contentstr+
               '</div>'+
               //<!-- /.dt-about-us-content -->
             '</div>'+
